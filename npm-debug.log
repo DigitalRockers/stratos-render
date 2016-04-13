@@ -1,0 +1,115 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/gian/.nvm/versions/node/v5.7.1/bin/node',
+1 verbose cli   '/home/gian/.nvm/versions/node/v5.7.1/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.6.0
+3 info using node@v5.7.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/srv/server/modules/stratos-render',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/gian/.npm/stratos-render/0.1.2/package.tgz not in flight; packing
+9 verbose correctMkdir /home/gian/.npm correctMkdir not in flight; initializing
+10 info lifecycle stratos-render@0.1.2~prepublish: stratos-render@0.1.2
+11 silly lifecycle stratos-render@0.1.2~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/home/gian/.npm/stratos-render/0.1.2/package.tgz',
+12 verbose tar pack   '/srv/server/modules/stratos-render' ]
+13 verbose tarball /home/gian/.npm/stratos-render/0.1.2/package.tgz
+14 verbose folder /srv/server/modules/stratos-render
+15 verbose addLocalTarball adding from inside cache /home/gian/.npm/stratos-render/0.1.2/package.tgz
+16 verbose correctMkdir /home/gian/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd stratos-render@0.1.2
+18 verbose afterAdd /home/gian/.npm/stratos-render/0.1.2/package/package.json not in flight; writing
+19 verbose correctMkdir /home/gian/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /home/gian/.npm/stratos-render/0.1.2/package/package.json written
+21 silly publish { name: 'stratos-render',
+21 silly publish   description: ' ',
+21 silly publish   version: '0.1.2',
+21 silly publish   keywords: [ 'render', 'stratos', 'file', 'mongodb' ],
+21 silly publish   bugs: { url: 'https://github.com/DigitalRockers/stratos-render/issues' },
+21 silly publish   license: 'MIT',
+21 silly publish   author: { name: 'Gianluca Pengo', url: 'https://github.com/gian788/' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/DigitalRockers/stratos-render.git' },
+21 silly publish   engines: { node: '>=0.10' },
+21 silly publish   dependencies:
+21 silly publish    { lodash: '~4.7.0',
+21 silly publish      async: '~1.5.2',
+21 silly publish      glob: '~7.0',
+21 silly publish      juice: '~1.1',
+21 silly publish      consolidate: '~0.14',
+21 silly publish      'html-minifier': '~1.5.0' },
+21 silly publish   devDependencies:
+21 silly publish    { 'eslint-config-airbnb': '^6.2.0',
+21 silly publish      'eslint-config-standard': '^5.1.0',
+21 silly publish      'eslint-plugin-react': '^4.3.0',
+21 silly publish      'eslint-plugin-standard': '^1.3.2',
+21 silly publish      mocha: '*',
+21 silly publish      should: '*' },
+21 silly publish   main: './index.js',
+21 silly publish   scripts: { test: 'mocha ./**/*.test.js' },
+21 silly publish   homepage: 'https://github.com/DigitalRockers/stratos-render#readme',
+21 silly publish   directories: { test: 'test' },
+21 silly publish   readme: '# stratos-render\nStratos render component\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '9540718b159b434121a2d75123c47ebc309eaa9b',
+21 silly publish   _id: 'stratos-render@0.1.2',
+21 silly publish   _shasum: '8a85deadc5f8025ae4982706621968aff7ae8eaa',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name stratos-render
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry uri https://registry.npmjs.org/stratos-render
+27 verbose publish registryBase https://registry.npmjs.org/
+28 silly publish uploading /home/gian/.npm/stratos-render/0.1.2/package.tgz
+29 verbose request uri https://registry.npmjs.org/stratos-render
+30 verbose request sending authorization for write operation
+31 info attempt registry request try #1 at 16:36:10
+32 verbose request id 437173ffbad6bcbb
+33 http request PUT https://registry.npmjs.org/stratos-render
+34 http 403 https://registry.npmjs.org/stratos-render
+35 verbose headers { 'content-type': 'application/json',
+35 verbose headers   'cache-control': 'max-age=300',
+35 verbose headers   'content-length': '95',
+35 verbose headers   'accept-ranges': 'bytes',
+35 verbose headers   date: 'Mon, 11 Apr 2016 14:36:13 GMT',
+35 verbose headers   via: '1.1 varnish',
+35 verbose headers   connection: 'keep-alive',
+35 verbose headers   'x-served-by': 'cache-fra1238-FRA',
+35 verbose headers   'x-cache': 'MISS',
+35 verbose headers   'x-cache-hits': '0',
+35 verbose headers   'x-timer': 'S1460385371.693450,VS0,VE1318',
+35 verbose headers   vary: 'Accept-Encoding' }
+36 verbose request invalidating /home/gian/.npm/registry.npmjs.org/stratos-render on PUT
+37 error publish Failed PUT 403
+38 verbose stack Error: "You cannot publish over the previously published version 0.1.2." : stratos-render
+38 verbose stack     at makeError (/home/gian/.nvm/versions/node/v5.7.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+38 verbose stack     at CachingRegistryClient.<anonymous> (/home/gian/.nvm/versions/node/v5.7.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+38 verbose stack     at Request._callback (/home/gian/.nvm/versions/node/v5.7.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+38 verbose stack     at Request.self.callback (/home/gian/.nvm/versions/node/v5.7.1/lib/node_modules/npm/node_modules/request/request.js:198:22)
+38 verbose stack     at emitTwo (events.js:100:13)
+38 verbose stack     at Request.emit (events.js:185:7)
+38 verbose stack     at Request.<anonymous> (/home/gian/.nvm/versions/node/v5.7.1/lib/node_modules/npm/node_modules/request/request.js:1035:10)
+38 verbose stack     at emitOne (events.js:95:20)
+38 verbose stack     at Request.emit (events.js:182:7)
+38 verbose stack     at IncomingMessage.<anonymous> (/home/gian/.nvm/versions/node/v5.7.1/lib/node_modules/npm/node_modules/request/request.js:962:12)
+39 verbose statusCode 403
+40 verbose pkgid stratos-render
+41 verbose cwd /srv/server/modules/stratos-render
+42 error Linux 3.13.0-68-generic
+43 error argv "/home/gian/.nvm/versions/node/v5.7.1/bin/node" "/home/gian/.nvm/versions/node/v5.7.1/bin/npm" "publish"
+44 error node v5.7.1
+45 error npm  v3.6.0
+46 error code E403
+47 error "You cannot publish over the previously published version 0.1.2." : stratos-render
+48 error If you need help, you may report this error at:
+48 error     <https://github.com/npm/npm/issues>
+49 verbose exit [ 1, true ]
